@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Bottlegram",
+	"category" : "Smallworlds-Bottlegram",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"world",
+		"wellcomeMessage",
+		"helpMessage"
+	],
+	"name" : "AdventureChat",
+	"type" : "normal"
+}
