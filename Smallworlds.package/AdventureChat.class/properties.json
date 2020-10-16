@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"world",
-		"wellcomeMessage",
+		"welcomeMessage",
 		"helpMessage"
 	],
 	"name" : "AdventureChat",

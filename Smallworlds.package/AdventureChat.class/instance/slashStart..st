@@ -1,3 +1,3 @@
 action
 slashStart: aMessage
-	aMessage send: wellcomeMessage
+	aMessage send: welcomeMessage
