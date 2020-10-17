@@ -1,7 +1,7 @@
 tests-action scope
 testHeldItems
 	| items |
-	player inventory add: pencil.
+	player pouch: pencil.
 	box add: bottle.
 	player location add: box.
 	items := player heldItems.

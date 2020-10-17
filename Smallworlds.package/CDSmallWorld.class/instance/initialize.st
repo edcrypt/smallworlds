@@ -26,7 +26,7 @@ foyer addConnection:
 
 self parser: (MainParser new verbParser: VerbParser cloakOfDarkness).
 self player: (CDActor defaultPlayer location: foyer).
-player inventory add: (Cloak new).
+player pouch: (Cloak new).
 
 self addLocation: foyer.
 self addLocation: bar.
