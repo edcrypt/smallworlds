@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SmallWorld",
+	"category" : "Smallworlds-WorldBuilder",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SWBuilderExampleWorld",
+	"type" : "normal"
+}

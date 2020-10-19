@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "EduardoPadoan 10/19/2020 12:46",
+	"super" : "Object",
+	"category" : "Smallworlds-WorldBuilder",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"regex",
+		"fileLocation",
+		"world"
+	],
+	"name" : "SWWorldBuilder",
+	"type" : "normal"
+}
