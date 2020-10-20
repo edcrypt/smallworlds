@@ -2,7 +2,10 @@ tests
 testParseLocationFrom
 	self assert: (builder parseLocationFrom: 'name A Place') name equals: 'name'.
 	self assert: (builder parseLocationFrom: 'name A Place') description trim equals: 'A Place'.
-	
+
+	self assert: (builder parseLocationFrom: '#closed Closed connection') name equals: 'closed'.
+	self assert: (builder parseLocationFrom: '#closed Closed connection') closedDescription trim equals: 'Closed connection'.
+
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem') name equals: 'other'.
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem') description trim equals: 'Another Place
 	
@@ -29,9 +32,6 @@ testParseLocationFrom
 	
 	There is a anItem here.
 	Person is here'.
-	
-	self assert: (builder parseLocationFrom: '#closed Closed connection') name equals: 'closed'.
-	self assert: (builder parseLocationFrom: '#closed Closed connection') closedDescription trim equals: 'Closed connection'.
 
 	"XXX test initial position"
 	self assert: (builder parseLocationFrom: '*room Some room') name equals: 'room'.

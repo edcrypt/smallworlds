@@ -1,11 +1,9 @@
 parsing
 parseLocationFrom: aString
-	| matcher location |
+	| location |
 	aString ifNil: [ ^nil ].
 
-	matcher := RxMatcher forString: regex.
-	(matcher matches: aString)
-		ifTrue: [
+	self parse: aString ifMatch: [ :matcher |
 			"TODO closed, initial"
 			location := self createLocationFrom: matcher.
 			
@@ -13,4 +11,4 @@ parseLocationFrom: aString
 			self createItemsFrom: matcher placedAt: location.
 			^ location
 		]
-		ifFalse: [ ^ 'No match' ].
+		ifMismatch: [ ^ 'No match' ].

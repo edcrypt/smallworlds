@@ -8,7 +8,8 @@
 	"instvars" : [
 		"regex",
 		"fileLocation",
-		"world"
+		"world",
+		"closedPrefix"
 	],
 	"name" : "SWWorldBuilder",
 	"type" : "normal"
