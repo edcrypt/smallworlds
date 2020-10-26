@@ -8,30 +8,30 @@ testParseLocationFrom
 
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem') name equals: 'other'.
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem') description trim equals: 'Another Place
-	
-	There is a anItem here.'.
+
+There is an anItem here.'.
 	
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem $another') name equals: 'other'.
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem $another') description trim equals: 'Another Place
-	
-	There is a anItem and another here.'.
+
+There is an anItem and another here.'.
 	
 	self assert: (builder parseLocationFrom: 'other Another Place %Person') name equals: 'other'.
 	self assert: (builder parseLocationFrom: 'other Another Place %Person') description trim equals: 'Another Place
-	
-	Person is here'.
+
+Person is here'.
 	
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem %Person') name equals: 'other'.
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem %Person') description trim equals: 'Another Place
-	
-	There is a anItem here.
-	Person is here'.
+
+There is an anItem here.
+Person is here'.
 	
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem $another %Person') name equals: 'other'.
 	self assert: (builder parseLocationFrom: 'other Another Place $anItem $another %Person') description trim equals: 'Another Place
-	
-	There is a anItem here.
-	Person is here'.
+
+There is an anItem here.
+Person is here'.
 
 	"XXX test initial position"
 	self assert: (builder parseLocationFrom: '*room Some room') name equals: 'room'.
